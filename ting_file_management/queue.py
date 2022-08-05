@@ -16,3 +16,6 @@ class Queue:
             return self._data[index]
 
         raise IndexError
+
+    def in_queue(self, value):
+        return value in self._data
