@@ -21,5 +21,5 @@ class Queue:
         for file in self._data:
             if file['nome_do_arquivo'] == value:
                 return True
-        
+
         return False
