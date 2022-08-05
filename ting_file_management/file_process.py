@@ -12,7 +12,7 @@ def process(path_file, instance: Queue):
         "linhas_do_arquivo": lines,
     }
 
-    if not instance.in_queue(file_info['nome_do_arquivo']):
+    if not instance.in_queue(file_info['nome_do_arquivo'], 'nome_do_arquivo'):
         instance.enqueue(file_info)
 
         print(file_info)

@@ -17,9 +17,9 @@ class Queue:
 
         raise IndexError
 
-    def in_queue(self, value):
+    def in_queue(self, value, key):
         for file in self._data:
-            if file['nome_do_arquivo'] == value:
+            if file[key] == value:
                 return True
 
         return False
