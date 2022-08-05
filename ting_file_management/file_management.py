@@ -1,5 +1,6 @@
 import sys
 
+
 def txt_importer(path_file: str):
     try:
         if path_file.split('.')[-1] != 'txt':
