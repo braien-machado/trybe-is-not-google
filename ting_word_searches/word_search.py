@@ -1,5 +1,4 @@
 from ting_file_management.queue import Queue
-import re
 
 
 def exists_word(word: str, instance: Queue):
@@ -16,7 +15,7 @@ def exists_word(word: str, instance: Queue):
                 file_search_result['ocorrencias'].append({
                     'linha': line + 1,
                 })
-        
+
         if len(file_search_result['ocorrencias']) > 0:
             search_result.append(file_search_result)
 
